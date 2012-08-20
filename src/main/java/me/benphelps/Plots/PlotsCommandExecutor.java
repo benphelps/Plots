@@ -14,7 +14,6 @@ public class PlotsCommandExecutor implements CommandExecutor {
 		plots.getLogger().info("Command Executor Start");
 	}
 
-	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 		plots.getLogger().info("Command Part 1");
 		// Sanity Checks

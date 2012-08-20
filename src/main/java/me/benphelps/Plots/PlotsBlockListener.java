@@ -8,7 +8,6 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockPlaceEvent;
-import org.bukkit.inventory.ItemStack;
 
 public class PlotsBlockListener implements Listener {
 
@@ -29,12 +28,11 @@ public class PlotsBlockListener implements Listener {
 	@EventHandler(priority = EventPriority.HIGHEST)
 	public boolean onBockDestroy(BlockBreakEvent event){
 		Player player = event.getPlayer();
-		Block block = event.getBlock();
+		//Block block = event.getBlock();
 		if(player.getItemInHand().getTypeId() == Material.STICK.getId()){
-			long point = PlotsPoint.point(block.getX(), block.getY());
 			
+			//long point = PlotsPoint.point(block.getX(), block.getY());
 			//if ((max(x0,x1,x2) != x0 && min(x0,x1,x2) != x0) &&(max(y0,y1,y2) != y0 && min(y0,y1,y2) != x0)) {
-				
 			//}
 			
 			return false;
