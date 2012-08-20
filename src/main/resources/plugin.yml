@@ -2,8 +2,15 @@ name: Plots
 main: me.benphelps.Plots.Plots
 version: 0.0.1
 commands:
-  new:
+  plots:
+    description: Shows the version of Plots.
+    usage: /<command>
+    permission: plots.help
+  plotsHelp:
+    description: Shows Plots help.
+    usage: /<command> help
+    permission: plots.help
+  plotsNew:
     description: Create a new plot.
     usage: /<command> new
-    permission: plots.manage
-    permission-message: You don't have management permissions.
+    permission: plots.manage.new
